@@ -1,0 +1,8 @@
+<h1>List of Forms</h1>
+
+<ul>
+{% for each in forms %}
+    <li><a href="{{each.get_absolute_url}}">{{each.title}}</a></li>
+{% endfor %}
+
+</ul>
